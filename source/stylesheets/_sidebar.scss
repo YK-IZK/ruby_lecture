@@ -1,0 +1,58 @@
+.nav-link {
+  color: #fff;
+  font-size: 15px;
+
+  display: inline-block;
+  padding-bottom: 4px;
+  position: relative;
+
+  &:focus,
+  &:hover {
+    color: cyan;
+  }
+
+  &::after{
+    background-color: cyan;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    transition: .3s all;
+    width: 0;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: cyan !important;
+}
+
+.sidebar-tab {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width:991px) {
+  .sidebar {
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 3%;
+    bottom: 0;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

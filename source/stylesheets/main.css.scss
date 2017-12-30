@@ -1,0 +1,58 @@
+// bootstarpの設定を上書き
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto;
+    width:94%;
+ }
+
+h1.page_title {
+  padding: 10px 20px;
+  margin: 20px 0;
+  color: #2c2c2f;
+  background: #c3f7f0;
+  border-top: solid 5px #00c6c6;
+  border-bottom: solid 5px #00c6c6;
+}
+
+h2{
+  padding:10px 10px;
+  border-left:6px solid #00c6c6;
+  // border-bottom:3px solid #c3f7f0;
+}
+
+h3 {
+  position:relative;
+  padding:3px 30px;
+}
+h3:before,
+h3:after{
+  content:"";
+  display:block;
+  width:10px;
+  height:10px;
+  border:2px solid #00c6c6;
+  position:absolute;
+  top:15px;
+  left:3px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+h3:after{
+  top:15px;
+  left:10px;
+  height:12px;
+  width:12px;
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
+  border:none;
+  background:rgba(0,198,198,0.3);
+}
+@import "sidebar";

@@ -1,0 +1,16 @@
+lecture:
+  chapter_title:
+    1: Rubyの世界へ!
+    2: Hello, World!
+    3: 文字列(String)
+    4: 数値(Numeric)
+    5: 配列(Array)
+    6: ハッシュ(Hash)
+    7: 条件分岐
+    8: ループ
+    9: メソッド
+    10: クラス
+    11: ライブラリ
+    12: HTTP基礎
+    13: Sinatra・ERB
+    14: 総合演習

@@ -1,0 +1,25 @@
+<a class="navbar-brand text-white" href="/">Ruby講義@2018</a>
+
+<div id="exampleAccordion" data-children=".item">
+  <div class="item">
+    <a class="sidebar-tab text-white" data-toggle="collapse" data-parent="#exampleAccordion" href="#sidebar-lecture" role="button" aria-expanded="true" aria-controls="sidebar-lecture">
+      <i class="fas fa-pencil-alt fa-sm"></i> Lecture
+    </a>
+
+    <div id="sidebar-lecture" class="collapse <%= 'show' if get_current_page_category == 'lecture' %>" role="tabpanel">
+      <p class="mb-3">
+        <%= generate_sidemenu %>
+      </p>
+    </div>
+  </div>
+  <div class="item">
+    <a class="sidebar-tab text-white" data-toggle="collapse" data-parent="#exampleAccordion" href="#sidebar-tips" role="button" aria-expanded="false" aria-controls="sidebar-tips">
+      <i class="fas fa-book fa-sm"></i> Tips
+    </a>
+    <div id="sidebar-tips" class="collapse <%= 'show' if get_current_page_category == 'tips' %>" role="tabpanel">
+      <p class="mb-3">
+        <%= generate_sidemenu %>
+      </p>
+    </div>
+  </div>
+</div>
